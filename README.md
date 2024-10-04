@@ -9,3 +9,7 @@
 #### USAGE
 
 #### CUSTOMIZATION OPTIONS
+
+## Development
+
+- Watch Flag: sass --watch src/main.scss css/ladle.css
