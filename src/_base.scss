@@ -1,8 +1,13 @@
-@use 'typography';
-@use 'variables';
-@use 'colors';
-@use 'utilities';
+@use "typography";
+@use "variables";
+@use "colors";
+@use "utilities";
 
 body {
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+}
+
+section + section {
+  margin-top: 2rem;
 }

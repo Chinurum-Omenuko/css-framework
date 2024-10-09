@@ -1,80 +1,27 @@
-.col-1-7 {
-  grid-column: span 1 / span 7;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 16px;
 }
 
-.col-2-7 {
-  grid-column: span 2 / span 7;
+@mixin generate-grid-columns($total-columns) {
+  @for $i from 1 through $total-columns {
+    .col-#{$i}-#{$total-columns} {
+      grid-column: span #{$i} / span #{$total-columns};
+    }
+  }
 }
 
-.col-3-7 {
-  grid-column: span 3 / span 7;
-}
-
-.col-4-7 {
-  grid-column: span 4 / span 7;
-}
-
-.col-5-7 {
-  grid-column: span 5 / span 7;
-}
-
-.col-6-7 {
-  grid-column: span 6 / span 7;
-}
-
-.col-7-7 {
-  grid-column: span 7 / span 7;
-}
-
-.col-1-12 {
-  grid-column: span 1 / span 12;
-}
-
-.col-2-12 {
-  grid-column: span 2 / span 12;
-}
-
-.col-3-12 {
-  grid-column: span 3 / span 12;
-}
-
-.col-4-12 {
-  grid-column: span 4 / span 12;
-}
-
-.col-5-12 {
-  grid-column: span 5 / span 12;
-}
-
-.col-6-12 {
-  grid-column: span 6 / span 12;
-}
-
-.col-7-12 {
-  grid-column: span 7 / span 12;
-}
-
-.col-8-12 {
-  grid-column: span 8 / span 12;
-}
-
-.col-9-12 {
-  grid-column: span 9 / span 12;
-}
-
-.col-10-12 {
-  grid-column: span 10 / span 12;
-}
-
-.col-11-12 {
-  grid-column: span 11 / span 12;
-}
-
-.col-12-12 {
-  grid-column: span 12 / span 12;
-}
+@include generate-grid-columns(7);
+@include generate-grid-columns(12);
 
 // Flexbox Styles
+
+@for $i from 1 through 6 {
+  .gap-#{$i} {
+    gap: #{$i}rem;
+  }
+}
 
 .flex {
   display: flex;

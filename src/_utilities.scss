@@ -1,5 +1,6 @@
-@use 'variables';
-@use 'typography';
+@use "variables";
+@use "typography";
+
 // Utilities
 // --------------------------------------------------
 
@@ -19,6 +20,56 @@
 
 .text-muted {
   color: variables.$muted-color;
+}
+
+// Background Colors
+// -------------------------
+.bg-primary {
+  background-color: variables.$primary-color;
+}
+
+.bg-secondary {
+  background-color: variables.$secondary-color;
+}
+
+.bg-accent {
+  background-color: variables.$accent-color;
+}
+
+.bg-muted {
+  background-color: variables.$muted-color;
+}
+
+.bg-green {
+  background-color: variables.$green-color;
+}
+
+.bg-blue {
+  background-color: variables.$blue-color;
+}
+
+.bg-orange {
+  background-color: variables.$orange-color;
+}
+
+.bg-yellow {
+  background-color: variables.$yellow-color;
+}
+
+.bg-purple {
+  background-color: variables.$purple-color;
+}
+
+.bg-pink {
+  background-color: variables.$pink-color;
+}
+
+.bg-brown {
+  background-color: variables.$brown-color;
+}
+
+.bg-gray {
+  background-color: variables.$gray-color;
 }
 
 // Font Styles
@@ -77,6 +128,33 @@
 
 .m-auto {
   margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@for $i from 1 through 6 {
+  .my-#{$i} {
+    margin: #{$i}rem 0;
+  }
+}
+@for $i from 1 through 6 {
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: typography.$font-3xl;
+  font-weight: typography.$font-bold;
+  text-decoration: underline;
+  margin-bottom: 2rem;
 }
 
 .m-1 {
@@ -183,7 +261,6 @@
   border-left: 1px solid variables.$border-color;
 }
 
-
 // Text Decoration Styles
 // -------------------------
 .text-decoration-none {
@@ -192,6 +269,28 @@
 
 .text-decoration-underline {
   text-decoration: underline;
+}
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  width: 100%;
+  aspect-ratio: $width / $height;
+}
+
+.aspect-ratio-1-1 {
+  @include aspect-ratio(1, 1);
+}
+
+.aspect-ratio-16-9 {
+  @include aspect-ratio(16, 9);
+}
+
+.aspect-ratio-4-3 {
+  @include aspect-ratio(4, 3);
+}
+
+.aspect-ratio-3-2 {
+  @include aspect-ratio(3, 2);
 }
 
 // Animations
@@ -233,4 +332,9 @@
 
 .animate-slide {
   animation: slide 0.5s ease-in-out;
+}
+
+.loop {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

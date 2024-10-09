@@ -191,6 +191,12 @@ span {
   font-weight: 300;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 16px;
+}
+
 .col-1-7 {
   grid-column: span 1/span 7;
 }
@@ -265,6 +271,30 @@ span {
 
 .col-12-12 {
   grid-column: span 12/span 12;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 4rem;
+}
+
+.gap-5 {
+  gap: 5rem;
+}
+
+.gap-6 {
+  gap: 6rem;
 }
 
 .flex {
@@ -359,6 +389,54 @@ span {
   color: #95a5a6;
 }
 
+.bg-primary {
+  background-color: #3498db;
+}
+
+.bg-secondary {
+  background-color: #f1c40f;
+}
+
+.bg-accent {
+  background-color: #e74c3c;
+}
+
+.bg-muted {
+  background-color: #95a5a6;
+}
+
+.bg-green {
+  background-color: #2ecc71;
+}
+
+.bg-blue {
+  background-color: #2980b9;
+}
+
+.bg-orange {
+  background-color: #f39c12;
+}
+
+.bg-yellow {
+  background-color: #f1c40f;
+}
+
+.bg-purple {
+  background-color: #8e44ad;
+}
+
+.bg-pink {
+  background-color: #e2553f;
+}
+
+.bg-brown {
+  background-color: #a52a2a;
+}
+
+.bg-gray {
+  background-color: #95a5a6;
+}
+
 .font-normal {
   font-style: 400;
 }
@@ -409,6 +487,70 @@ span {
 
 .m-auto {
   margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.my-6 {
+  margin: 6rem 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 2rem;
 }
 
 .m-1 {
@@ -519,6 +661,30 @@ span {
   text-decoration: underline;
 }
 
+.aspect-ratio-1-1 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.aspect-ratio-16-9 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.7777777778;
+}
+
+.aspect-ratio-4-3 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.3333333333;
+}
+
+.aspect-ratio-3-2 {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.5;
+}
+
 @keyframes opacity {
   0% {
     opacity: 0;
@@ -555,8 +721,103 @@ span {
   animation: slide 0.5s ease-in-out;
 }
 
+.loop {
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+.box {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+}
+.btn.btn-primary {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+.btn.btn-primary:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+.btn.btn-secondary {
+  background-color: #f1c40f;
+  color: white;
+  border-color: #f1c40f;
+}
+.btn.btn-secondary:hover {
+  background-color: rgb(193.7007874016, 157.3818897638, 11.2992125984);
+}
+.btn.btn-disabled {
+  background-color: #95a5a6;
+  color: white;
+  border-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.form .form-group {
+  margin-bottom: 1rem;
+}
+.form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form .form-group input,
+.form .form-group textarea,
+.form .form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.form .form-group input:focus,
+.form .form-group textarea:focus,
+.form .form-group select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+.form .form-actions {
+  text-align: right;
+}
+.form .form-actions .btn {
+  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=ladle.css.map */

@@ -4,31 +4,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/ladle.css" />
-    <title>Ladle CSS</title>
+    <title>Ladle CSS Framework</title>
   </head>
   <body>
-    
-    <!-- requirements -->
-    <!-- color scheme -->
-    <!-- grid config (column count, gap, etc) -->
-    <!-- default border, padding & margins -->
+    <h1 class="text-primary text-center mb-3">Ladle CSS Framework</h1>
 
-    <!-- things to cover -->
-    <!-- 1. Typography -->
-    <!-- All heading levels 1-6, p, span -->
-    <!-- 2. Links & Buttons -->
-    <!-- unstyled, styles, underline, disabled -->
-    <!-- 3. Forms -->
-    <!-- text input, checkbox, radio buttons, select -->
-    <!-- 4. Grid -->
-    <!-- grid columns (7, 12), span utility classes -->
-    <!-- 5. Utilities -->
-    <!-- color, font style, size, margin, padding, border, text decoration, animation (opacity, reveal, slide) -->
-    <!-- 6. Flex -->
-    <!-- alignment, flex direction, flex grow, shrink, etc -->
+    <!-- Typography -->
+    <section class="flex flex-column gap-2">
+      <h1 class="section-heading">Typography</h1>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <p>
+        This is a paragraph of text.
+        <span class="text-secondary">This is inline text.</span>
+      </p>
+    </section>
 
-    <h1 class="text-primary">Ladle CSS</h1>
-    <h2>now</h2>
-    <p>hey</p>
+    <!-- Links & Buttons -->
+    <section>
+      <h1 class="section-heading">Links & Buttons</h1>
+      <div class="flex flex-column items-start">
+        <a href="#" class="text-primary">Primary Link</a><br />
+        <button class="btn">Default Button</button>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-disabled" disabled>Disabled Button</button>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section>
+      <h2 class="section-heading">Forms</h2>
+      <form class="flex flex-column gap-1">
+        <div class="form-group">
+          <label for="input-text">Text Input:</label>
+          <input type="text" id="input-text" class="input" />
+        </div>
+
+        <div class="form-group">
+          <label for="checkbox">Checkbox:</label>
+          <input type="checkbox" id="checkbox" class="checkbox" />
+        </div>
+
+        <div class="form-group">
+          <label for="radio">Radio Button:</label>
+          <input type="radio" id="radio" name="radio" class="radio" />
+        </div>
+
+        <div class="form-group">
+          <label for="select">Select Box:</label>
+          <select id="select" class="select">
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Grid -->
+    <section class="flex flex-column gap-1">
+      <h2>Grid Layout</h2>
+      <div class="grid">
+        <div
+          class="flex items-center justify-center col-4-12 bg-primary text-white aspect-ratio-1-1"
+        >
+          4/12 Column
+        </div>
+        <div
+          class="flex items-center justify-center col-4-12 bg-secondary text-white aspect-ratio-1-1"
+        >
+          4/12 Column
+        </div>
+        <div
+          class="flex items-center justify-center col-4-12 bg-green text-white aspect-ratio-1-1"
+        >
+          4/12 Column
+        </div>
+      </div>
+      <div class="grid">
+        <div
+          class="flex items-center justify-center col-6-12 bg-primary text-white aspect-ratio-1-1"
+        >
+          6/12 Column
+        </div>
+        <div
+          class="flex items-center justify-center col-6-12 bg-secondary text-white aspect-ratio-1-1"
+        >
+          6/12 Column
+        </div>
+      </div>
+    </section>
+
+    <!-- Flexbox -->
+    <section>
+      <h2 class="section-heading">Flexbox</h2>
+      <div class="flex gap-2 flex-row justify-between items-center text-white">
+        <div class="box aspect-ratio-1-1">Flex Item 1</div>
+        <div class="box aspect-ratio-1-1">Flex Item 2</div>
+        <div class="box aspect-ratio-1-1">Flex Item 3</div>
+      </div>
+    </section>
+
+    <!-- Utilities -->
+    <section class="flex flex-column gap-2">
+      <h2 class="section-heading">Utilities</h2>
+      <div class="bg-primary text-white p-4">Padding Utility</div>
+      <div class="bg-secondary text-white m-4 p-4">Margin Utility</div>
+      <div class="bg-tertiary text-white border p-4">Border Utility</div>
+      <div class="bg-primary text-white text-decoration-underline p-4">
+        Underline Text
+      </div>
+    </section>
+
+    <!-- Animations -->
+    <section class="flex flex-column gap-6">
+      <h2 class="section-heading">Animations</h2>
+      <div class="flex flex-row gap-2">
+        <div class="box bg-primary text-white p-10 animate-opacity loop">
+          Opacity
+        </div>
+        <div class="box bg-secondary text-white p-10 animate-reveal loop">
+          Reveal
+        </div>
+        <div class="box bg-green text-white p-10 animate-slide loop">Slide</div>
+      </div>
+    </section>
   </body>
 </html>

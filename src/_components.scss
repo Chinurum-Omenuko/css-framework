@@ -1,0 +1,97 @@
+@use "variables";
+
+.box {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: variables.$primary-color;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid variables.$border-color;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+
+  &.btn-primary {
+    background-color: variables.$primary-color;
+    color: white;
+    border-color: variables.$primary-color;
+
+    &:hover {
+      background-color: darken(variables.$primary-color, 10%);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: variables.$secondary-color;
+    color: white;
+    border-color: variables.$secondary-color;
+
+    &:hover {
+      background-color: darken(variables.$secondary-color, 10%);
+    }
+  }
+
+  &.btn-disabled {
+    background-color: variables.$muted-color;
+    color: white;
+    border-color: variables.$muted-color;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid variables.$border-color;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid variables.$border-color;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: variables.$primary-color;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    }
+  }
+
+  .form-actions {
+    text-align: right;
+
+    .btn {
+      margin-left: 0.5rem;
+    }
+  }
+}
