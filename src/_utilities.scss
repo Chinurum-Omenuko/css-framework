@@ -1,0 +1,241 @@
+// Utilities
+// --------------------------------------------------
+
+// Colors
+// -------------------------
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-muted {
+  color: var(--muted-color);
+}
+
+// Font Styles
+// -------------------------
+.font-normal {
+  font-style: normal;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-oblique {
+  font-style: oblique;
+}
+
+// Font Sizes
+// -------------------------
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+// Margin Styles
+// -------------------------
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
+// Padding Styles
+// -------------------------
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+// Border Styles
+// -------------------------
+.border-none {
+  border: none;
+}
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.border-t {
+  border-top: 1px solid var(--border-color);
+}
+
+.border-r {
+  border-right: 1px solid var(--border-color);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-l {
+  border-left: 1px solid var(--border-color);
+}
+
+// Text Decoration Styles
+// -------------------------
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+// Animations
+// -------------------------
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-opacity {
+  animation: opacity 0.5s ease-in-out;
+}
+
+.animate-reveal {
+  animation: reveal 0.5s ease-in-out;
+}
+
+.animate-slide {
+  animation: slide 0.5s ease-in-out;
+}
