@@ -344,23 +344,23 @@ span {
 }
 
 .text-primary {
-  color: var(--primary-color);
+  color: #3498db;
 }
 
 .text-secondary {
-  color: var(--secondary-color);
+  color: #f1c40f;
 }
 
 .text-accent {
-  color: var(--accent-color);
+  color: #e74c3c;
 }
 
 .text-muted {
-  color: var(--muted-color);
+  color: #95a5a6;
 }
 
 .font-normal {
-  font-style: normal;
+  font-style: 400;
 }
 
 .font-italic {
@@ -372,7 +372,7 @@ span {
 }
 
 .text-xs {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .text-sm {
@@ -383,32 +383,24 @@ span {
   font-size: 1rem;
 }
 
-.text-lg {
+.text-md {
   font-size: 1.125rem;
 }
 
-.text-xl {
+.text-lg {
   font-size: 1.25rem;
 }
 
-.text-2xl {
+.text-xl {
   font-size: 1.5rem;
 }
 
+.text-2xl {
+  font-size: 2rem;
+}
+
 .text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
   font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
 }
 
 .m-0 {
@@ -500,23 +492,23 @@ span {
 }
 
 .border {
-  border: 1px solid var(--border-color);
+  border: 1px solid #ccc;
 }
 
 .border-t {
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid #ccc;
 }
 
 .border-r {
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid #ccc;
 }
 
 .border-b {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #ccc;
 }
 
 .border-l {
-  border-left: 1px solid var(--border-color);
+  border-left: 1px solid #ccc;
 }
 
 .text-decoration-none {

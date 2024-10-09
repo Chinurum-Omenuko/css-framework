@@ -1,9 +1,9 @@
 @use 'variables';
 // Themes
-$success: $green-color;
-$info: $blue-color;
-$danger: $pink-color;
-$error: $pink-color;
-$light: $gray-color;
+$success: variables.$green-color;
+$info: variables.$blue-color;
+$danger: variables.$pink-color;
+$error: variables.$pink-color;
+$light: variables.$gray-color;
 
 

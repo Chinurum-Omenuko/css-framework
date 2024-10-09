@@ -1,28 +1,30 @@
+@use 'variables';
+@use 'typography';
 // Utilities
 // --------------------------------------------------
 
 // Colors
 // -------------------------
 .text-primary {
-  color: var(--primary-color);
+  color: variables.$primary-color;
 }
 
 .text-secondary {
-  color: var(--secondary-color);
+  color: variables.$secondary-color;
 }
 
 .text-accent {
-  color: var(--accent-color);
+  color: variables.$accent-color;
 }
 
 .text-muted {
-  color: var(--muted-color);
+  color: variables.$muted-color;
 }
 
 // Font Styles
 // -------------------------
 .font-normal {
-  font-style: normal;
+  font-style: typography.$font-normal;
 }
 
 .font-italic {
@@ -36,43 +38,35 @@
 // Font Sizes
 // -------------------------
 .text-xs {
-  font-size: 0.75rem;
+  font-size: typography.$font-xs;
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: typography.$font-sm;
 }
 
 .text-base {
-  font-size: 1rem;
+  font-size: typography.$font-base;
+}
+
+.text-md {
+  font-size: typography.$font-md;
 }
 
 .text-lg {
-  font-size: 1.125rem;
+  font-size: typography.$font-lg;
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: typography.$font-xl;
 }
 
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: typography.$font-2xl;
 }
 
 .text-3xl {
-  font-size: 1.875rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
+  font-size: typography.$font-3xl;
 }
 
 // Margin Styles
@@ -170,24 +164,25 @@
 }
 
 .border {
-  border: 1px solid var(--border-color);
+  border: 1px solid variables.$border-color;
 }
 
 .border-t {
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid variables.$border-color;
 }
 
 .border-r {
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid variables.$border-color;
 }
 
 .border-b {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid variables.$border-color;
 }
 
 .border-l {
-  border-left: 1px solid var(--border-color);
+  border-left: 1px solid variables.$border-color;
 }
+
 
 // Text Decoration Styles
 // -------------------------

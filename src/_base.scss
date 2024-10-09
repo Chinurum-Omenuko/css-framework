@@ -1,4 +1,7 @@
 @use 'typography';
+@use 'variables';
+@use 'colors';
+@use 'utilities';
 
 body {
   font-family: "Montserrat", sans-serif;
