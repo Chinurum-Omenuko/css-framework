@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 html,
 body,
 div,
@@ -149,6 +149,418 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+span {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.col-1-7 {
+  grid-column: span 1/span 7;
+}
+
+.col-2-7 {
+  grid-column: span 2/span 7;
+}
+
+.col-3-7 {
+  grid-column: span 3/span 7;
+}
+
+.col-4-7 {
+  grid-column: span 4/span 7;
+}
+
+.col-5-7 {
+  grid-column: span 5/span 7;
+}
+
+.col-6-7 {
+  grid-column: span 6/span 7;
+}
+
+.col-7-7 {
+  grid-column: span 7/span 7;
+}
+
+.col-1-12 {
+  grid-column: span 1/span 12;
+}
+
+.col-2-12 {
+  grid-column: span 2/span 12;
+}
+
+.col-3-12 {
+  grid-column: span 3/span 12;
+}
+
+.col-4-12 {
+  grid-column: span 4/span 12;
+}
+
+.col-5-12 {
+  grid-column: span 5/span 12;
+}
+
+.col-6-12 {
+  grid-column: span 6/span 12;
+}
+
+.col-7-12 {
+  grid-column: span 7/span 12;
+}
+
+.col-8-12 {
+  grid-column: span 8/span 12;
+}
+
+.col-9-12 {
+  grid-column: span 9/span 12;
+}
+
+.col-10-12 {
+  grid-column: span 10/span 12;
+}
+
+.col-11-12 {
+  grid-column: span 11/span 12;
+}
+
+.col-12-12 {
+  grid-column: span 12/span 12;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-muted {
+  color: var(--muted-color);
+}
+
+.font-normal {
+  font-style: normal;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-oblique {
+  font-style: oblique;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.border-none {
+  border: none;
+}
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.border-t {
+  border-top: 1px solid var(--border-color);
+}
+
+.border-r {
+  border-right: 1px solid var(--border-color);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-l {
+  border-left: 1px solid var(--border-color);
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-opacity {
+  animation: opacity 0.5s ease-in-out;
+}
+
+.animate-reveal {
+  animation: reveal 0.5s ease-in-out;
+}
+
+.animate-slide {
+  animation: slide 0.5s ease-in-out;
 }
 
 body {
