@@ -1,21 +1,9 @@
 # LADLE CSS FRAMEWORK
 
-## Team Members
-
-[Your team details here]
-
----
-
 ## INSTALLATION
 
-```bash
-npm install ladle-css
-```
-
-Or include the compiled CSS in your HTML:
-
 ```html
-<link rel="stylesheet" href="path-to/ladle.css" />
+<link rel="stylesheet" href="/ladle.css" />
 ```
 
 ---
