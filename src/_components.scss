@@ -53,7 +53,10 @@
     background-color: variables.$accent-color;
     color: white;
     border-color: variables.$accent-color;
-    opacity: 0.1;
+
+    &:hover{
+      background-color: darken(variables.$accent-color, 10%);
+    }
   } 
 
 }
